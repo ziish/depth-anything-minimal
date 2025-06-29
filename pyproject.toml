@@ -1,0 +1,25 @@
+[project]
+name = "depth-anything-minimal-cus"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fs>=2.4.16",
+    "h5py>=3.13.0",
+    "lxml>=5.4.0",
+    "numpy>=2.2.6",
+    "opencv-python>=4.11.0.86",
+    "tensorboard>=2.19.0",
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+[dependency-groups]
+dev = ["black>=25.1.0", "ipykernel>=6.29.5", "isort>=6.0.0", "pytest>=8.3.4"]
